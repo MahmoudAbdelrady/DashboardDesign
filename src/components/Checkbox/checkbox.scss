@@ -1,0 +1,40 @@
+@use "../../scss/colors" as *;
+
+label {
+  .toggle-checkbox {
+    display: none;
+    appearance: none;
+    &:checked {
+      & + .toggle-switch {
+        background-color: $blueColor;
+        i {
+          left: 50px;
+          color: $blueColor;
+        }
+      }
+    }
+  }
+  .toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    i {
+      position: absolute;
+      background-color: #fff;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      top: 4px;
+      left: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #aaa;
+      transition: 0.3s;
+    }
+  }
+}

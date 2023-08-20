@@ -1,0 +1,88 @@
+.plans {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  display: flex;
+}
+.plans .content {
+  width: 100%;
+}
+.plans .content .plans-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin: 20px;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .plans .content .plans-page {
+    grid-template-columns: minmax(250px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.plans .content .plans-page .plan {
+  background-color: #fff;
+  padding: 20px;
+}
+.plans .content .plans-page .plan .top {
+  text-align: center;
+  padding: 20px;
+  border: 3px solid #fff;
+  outline: 3px solid transparent;
+}
+.plans .content .plans-page .plan .top.green {
+  outline-color: #22c55e;
+  background-color: #22c55e;
+}
+.plans .content .plans-page .plan .top.blue {
+  outline-color: #0075ff;
+  background-color: #0075ff;
+}
+.plans .content .plans-page .plan .top.orange {
+  outline-color: #f59e0b;
+  background-color: #f59e0b;
+}
+.plans .content .plans-page .plan .top h2 {
+  margin: 0;
+  color: #fff;
+}
+.plans .content .plans-page .plan .top .price {
+  color: #fff;
+  position: relative;
+  font-size: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.plans .content .plans-page .plan .top .price span {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  font-size: 25px;
+}
+.plans .content .plans-page .plan ul li {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+.plans .content .plans-page .plan ul li i {
+  font-size: 18px;
+}
+.plans .content .plans-page .plan ul li i:first-child {
+  margin-right: 5px;
+}
+.plans .content .plans-page .plan ul li i.yes {
+  color: #22c55e;
+}
+.plans .content .plans-page .plan ul li i.help {
+  color: #888;
+  margin-left: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.plans .content .plans-page .plan ul li i:not(.yes, .help) {
+  color: #f44336;
+  font-size: 16px;
+}/*# sourceMappingURL=plans.css.map */

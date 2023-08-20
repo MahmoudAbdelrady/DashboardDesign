@@ -1,0 +1,62 @@
+@use "../../scss/colors" as *;
+
+.header {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .search {
+    position: relative;
+    i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: $greyColor;
+    }
+    input {
+      padding: 10px;
+      border: 1px solid $lightGreyColor;
+      border-radius: 10px;
+      margin-left: 5px;
+      padding-left: 30px;
+      width: 190px;
+      transition: width 0.3s;
+      caret-color: #aaa;
+      &:focus {
+        width: 240px;
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    .notifications {
+      position: relative;
+      i {
+        font-size: 20px;
+      }
+      &::before {
+        content: "";
+        content: "";
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        background-color: #f44336;
+        border-radius: 50%;
+        right: 2px;
+        top: 2px;
+      }
+    }
+    img {
+      width: 35px;
+      height: 35px;
+      margin-left: 15px;
+    }
+  }
+}

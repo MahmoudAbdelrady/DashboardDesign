@@ -1,0 +1,126 @@
+@use "../../scss/colors" as *;
+
+.pjs {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  display: flex;
+  .content {
+    width: 100%;
+    .projects-page {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+      margin: 20px;
+      gap: 20px;
+      @media (max-width: 767px) {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+      }
+      .project {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 6px;
+        position: relative;
+        .date {
+          font-size: 13px;
+          color: $greyColor;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+        }
+        h4 {
+          margin: 0;
+          font-weight: normal;
+        }
+        p {
+          color: $greyColor;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+        .team {
+          position: relative;
+          min-height: 80px;
+          a {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @for $i from 1 through 4 {
+              &:nth-child(#{$i + 1}) {
+                left: calc(25px * #{$i});
+              }
+            }
+            &:hover {
+              z-index: 1000;
+            }
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 2px solid #fff;
+            }
+          }
+        }
+        .techs {
+          display: flex;
+          justify-content: flex-end;
+          border-top: 1px solid #eee;
+          padding-top: 15px;
+          margin-top: 15px;
+          @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+          }
+          span {
+            font-size: 13px;
+            border-radius: 6px;
+            background-color: #eee;
+            padding: 3px 8px;
+            width: fit-content;
+            &:not(:last-of-type) {
+              margin-right: 5px;
+              @media (max-width: 767px) {
+                margin-bottom: 15px;
+                margin-right: 0;
+              }
+            }
+          }
+        }
+        .info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid #eee;
+          margin-top: 15px;
+          padding-top: 15px;
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
+          .prog {
+            background-color: #eee;
+            height: 8px;
+            width: 260px;
+            position: relative;
+            border-radius: 6px;
+            @media (max-width: 767px) {
+              margin-bottom: 15px;
+            }
+            span {
+              background-color: $redColor;
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              border-radius: 6px;
+            }
+          }
+          .money {
+            font-size: 14px;
+            color: $greyColor;
+          }
+        }
+      }
+    }
+  }
+}

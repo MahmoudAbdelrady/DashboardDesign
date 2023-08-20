@@ -1,0 +1,29 @@
+@use "../../scss/colors" as *;
+
+.cb {
+  display: block;
+  width: fit-content;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin: 15px auto 0;
+  &.green {
+    background-color: $greenColor;
+    &:hover {
+      background-color: green;
+    }
+  }
+  &.blue {
+    background-color: $blueColor;
+    &:hover {
+      background-color: $blueAltColor;
+    }
+  }
+  &.orange {
+    background-color: $orangeColor;
+    &:hover {
+      background-color: chocolate;
+    }
+  }
+}

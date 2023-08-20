@@ -1,0 +1,28 @@
+.cb {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin: 15px auto 0;
+}
+.cb.green {
+  background-color: #22c55e;
+}
+.cb.green:hover {
+  background-color: green;
+}
+.cb.blue {
+  background-color: #0075ff;
+}
+.cb.blue:hover {
+  background-color: #0d69d5;
+}
+.cb.orange {
+  background-color: #f59e0b;
+}
+.cb.orange:hover {
+  background-color: chocolate;
+}/*# sourceMappingURL=custom-button.css.map */

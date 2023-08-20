@@ -1,0 +1,10 @@
+@use "./colors" as *;
+
+@keyframes change-color {
+  from {
+    background-color: $blueColor;
+  }
+  to {
+    background-color: #fff;
+  }
+}

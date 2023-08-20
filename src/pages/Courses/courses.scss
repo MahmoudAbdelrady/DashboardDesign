@@ -1,0 +1,75 @@
+@use "../../scss/colors" as *;
+
+.courses {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  display: flex;
+  .content {
+    width: 100%;
+    .courses-page {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      margin: 20px;
+      gap: 20px;
+      @media (max-width: 767px) {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+      }
+      .course {
+        background-color: #fff;
+        border-radius: 6px;
+        position: relative;
+        overflow: hidden;
+        .cover {
+          max-width: 100%;
+        }
+        .instructor {
+          position: absolute;
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          top: 20px;
+          left: 20px;
+          border: 2px solid #fff;
+        }
+        .course-info {
+          padding: 20px;
+          h4 {
+            margin: 0;
+          }
+          .description {
+            color: $greyColor;
+            margin-top: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+          }
+        }
+        .info {
+          padding: 15px;
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid #eee;
+          font-size: 13px;
+          .title {
+            background-color: $blueColor;
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 6px;
+            position: absolute;
+            left: 50%;
+            top: -13px;
+            transform: translateX(-50%);
+            font-size: 13px;
+          }
+          .stats {
+            color: $greyColor;
+          }
+        }
+      }
+    }
+  }
+}

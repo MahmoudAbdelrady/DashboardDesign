@@ -1,0 +1,132 @@
+.friends {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  display: flex;
+}
+.friends .content {
+  width: 100%;
+}
+.friends .content .friends-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 20px;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .friends .content .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.friends .content .friends-page .friend {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  position: relative;
+}
+.friends .content .friends-page .friend .contact {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.friends .content .friends-page .friend .contact i {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.friends .content .friends-page .friend .contact i:hover {
+  background-color: #0075ff;
+  color: #fff;
+}
+.friends .content .friends-page .friend .contact i:not(:last-of-type) {
+  margin-right: 10px;
+}
+.friends .content .friends-page .friend .friend-info {
+  text-align: center;
+}
+.friends .content .friends-page .friend .friend-info img {
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+}
+.friends .content .friends-page .friend .friend-info h4 {
+  margin: 0;
+}
+.friends .content .friends-page .friend .friend-info p {
+  color: #888;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.friends .content .friends-page .friend .icons {
+  font-size: 14px;
+  position: relative;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.friends .content .friends-page .friend .icons .icon:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.friends .content .friends-page .friend .icons .icon i {
+  margin-right: 10px;
+}
+.friends .content .friends-page .friend .icons .rank {
+  font-weight: bold;
+  color: #f59e0b;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  opacity: 0.2;
+}
+.friends .content .friends-page .friend .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+.friends .content .friends-page .friend .info .join-date {
+  color: #888;
+}
+.friends .content .friends-page .friend .info .profile-controls a {
+  background-color: #0075ff;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin-right: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.friends .content .friends-page .friend .info .profile-controls a:hover {
+  background-color: #0d69d5;
+}
+.friends .content .friends-page .friend .info .profile-controls .remove {
+  padding: 4px 10px;
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.friends .content .friends-page .friend .info .profile-controls .remove:hover {
+  background-color: red;
+}/*# sourceMappingURL=friends.css.map */

@@ -1,0 +1,142 @@
+.pjs {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  display: flex;
+}
+.pjs .content {
+  width: 100%;
+}
+.pjs .content .projects-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  margin: 20px;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .pjs .content .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.pjs .content .projects-page .project {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+}
+.pjs .content .projects-page .project .date {
+  font-size: 13px;
+  color: #888;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.pjs .content .projects-page .project h4 {
+  margin: 0;
+  font-weight: normal;
+}
+.pjs .content .projects-page .project p {
+  color: #888;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.pjs .content .projects-page .project .team {
+  position: relative;
+  min-height: 80px;
+}
+.pjs .content .projects-page .project .team a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.pjs .content .projects-page .project .team a:nth-child(2) {
+  left: calc(25px * 1);
+}
+.pjs .content .projects-page .project .team a:nth-child(3) {
+  left: calc(25px * 2);
+}
+.pjs .content .projects-page .project .team a:nth-child(4) {
+  left: calc(25px * 3);
+}
+.pjs .content .projects-page .project .team a:nth-child(5) {
+  left: calc(25px * 4);
+}
+.pjs .content .projects-page .project .team a:hover {
+  z-index: 1000;
+}
+.pjs .content .projects-page .project .team a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.pjs .content .projects-page .project .techs {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .pjs .content .projects-page .project .techs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.pjs .content .projects-page .project .techs span {
+  font-size: 13px;
+  border-radius: 6px;
+  background-color: #eee;
+  padding: 3px 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.pjs .content .projects-page .project .techs span:not(:last-of-type) {
+  margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .pjs .content .projects-page .project .techs span:not(:last-of-type) {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+.pjs .content .projects-page .project .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+@media (max-width: 767px) {
+  .pjs .content .projects-page .project .info {
+    flex-direction: column;
+  }
+}
+.pjs .content .projects-page .project .info .prog {
+  background-color: #eee;
+  height: 8px;
+  width: 260px;
+  position: relative;
+  border-radius: 6px;
+}
+@media (max-width: 767px) {
+  .pjs .content .projects-page .project .info .prog {
+    margin-bottom: 15px;
+  }
+}
+.pjs .content .projects-page .project .info .prog span {
+  background-color: #f44336;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+}
+.pjs .content .projects-page .project .info .money {
+  font-size: 14px;
+  color: #888;
+}/*# sourceMappingURL=projects.css.map */
