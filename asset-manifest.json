@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DashboardDesign/static/css/main.ac45a56c.css",
+    "main.js": "/DashboardDesign/static/js/main.6be5a706.js",
+    "static/media/bootstrap-icons.woff?": "/DashboardDesign/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/DashboardDesign/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "index.html": "/DashboardDesign/index.html",
+    "main.ac45a56c.css.map": "/DashboardDesign/static/css/main.ac45a56c.css.map",
+    "main.6be5a706.js.map": "/DashboardDesign/static/js/main.6be5a706.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac45a56c.css",
+    "static/js/main.6be5a706.js"
+  ]
+}
